@@ -19,7 +19,3 @@
 ## 运行预览
 
 ![运行预览](./preview.png)
-
-## 致谢
-
-感谢 [sethcottle](https://github.com/sethcottle/littlelink/) 提供的图标样式。
