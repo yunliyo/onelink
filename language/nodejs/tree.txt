@@ -1,0 +1,57 @@
+link-in-bio-platform/
+├── backend/                   # Node.js后端服务
+│   ├── config/                # 配置文件
+│   │   ├── database.js        # 数据库连接配置
+│   │   ├── env.js             # 环境变量配置
+│   │   └── passport.js        # 认证配置
+│   ├── controllers/           # 业务逻辑控制器
+│   │   ├── authController.js  # 认证相关逻辑
+│   │   ├── linkController.js  # 链接管理逻辑
+│   │   ├── userController.js  # 用户管理逻辑
+│   │   └── pageController.js  # 个人页面逻辑
+│   ├── models/                # 数据模型
+│   │   ├── User.js            # 用户模型
+│   │   ├── Link.js            # 链接模型
+│   │   ├── Page.js            # 个人页面模型
+│   │   └── Analytics.js       # 访问统计模型
+│   ├── routes/                # API路由
+│   │   ├── authRoutes.js      # 认证路由
+│   │   ├── linkRoutes.js      # 链接路由
+│   │   ├── userRoutes.js      # 用户路由
+│   │   └── api.js             # 主API路由
+│   ├── middleware/            # 中间件
+│   │   ├── auth.js            # 认证中间件
+│   │   ├── error.js           # 错误处理中间件
+│   │   └── validation.js      # 数据验证中间件
+│   ├── services/              # 服务层
+│   │   ├── authService.js     # 认证服务
+│   │   ├── linkService.js     # 链接服务
+│   │   └── emailService.js    # 邮件服务
+│   ├── utils/                 # 工具函数
+│   │   ├── helpers.js         # 通用帮助函数
+│   │   ├── logger.js          # 日志记录
+│   │   └── validators.js      # 验证工具
+│   ├── app.js                 # Express应用配置
+│   └── server.js              # 服务器入口文件
+├── frontend/                  # 前端应用
+│   ├── public/                # 静态资源
+│   ├── src/
+│   │   ├── components/       # React/Vue组件
+│   │   ├── pages/            # 页面组件
+│   │   │   ├── Dashboard/    # 管理面板
+│   │   │   ├── Profile/      # 个人资料
+│   │   │   └── BioPage/      # 个人链接页面
+│   │   ├── context/          # 状态管理
+│   │   ├── services/         # API服务
+│   │   ├── styles/           # 样式文件
+│   │   ├── App.js            # 主应用组件
+│   │   └── index.js          # 应用入口
+│   └── package.json
+├── shared/                    # 前后端共享代码
+│   └── types.js               # 类型定义
+├── .env                       # 环境变量
+├── .gitignore                 # Git忽略文件
+├── package.json               # 项目依赖
+├── package-lock.json
+├── README.md                  # 项目说明
+└── docker-compose.yml         # Docker配置

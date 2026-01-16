@@ -1,0 +1,23 @@
+/**index.wxss**/
+page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.scrollarea {
+  background: #fcfcf1;
+  font-family: "SimSun", "宋体", serif;
+  flex: 1;
+  overflow-y: hidden;
+}
+
+.textinfo {
+  color: #000000;
+  font-size: 18px;
+  font-weight: bolder;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
